@@ -1,0 +1,328 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Navigation Bar */
+
+    #home {
+      /* this is to fill the screen of the header part*/
+      background-color:  #6e6e6e;
+      padding-bottom: 1cm;
+      margin-left:-1cm;
+      margin-right:-1cm;
+      margin-top:-1cm;
+      padding-top: 2cm;
+      padding-bottom: 2cm;
+      height: 5mm;
+    }
+    /*the name and contact part of header*/
+    .profile_name {
+      float: left;/*to put the contact part on the left side of the screen/page*/
+      padding-left: 2cm;
+      color:black;
+      font-size: 30px;
+    }
+    /*this is the styling of the text in the contact part*/
+    /*when calling this in the html, just call the class = contact_info in the div that has the email and text with their images*/
+    .profile_name .contact_info {
+      font-size: 15px;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+    /*styling of the phone  and email img/symbol in the contact info*/
+    .contact_info img {
+      width:25px;
+      margin-right: 10px;
+      float:left;
+    }
+    /*for navigation menu bar*/
+    .navbardiv {
+      float: right;/*to put the menu part on the right side of the screen/page*/
+      padding-right: 1cm;
+    }
+    .menu {
+      color: lightgray;
+      margin: 10px;
+      padding: 20px;
+      font-size: 20px;
+      text-decoration:none;
+    }
+    /*this is for when the mouse is on any of the menu item, it should show the underline and make the text bolder*/
+    .menu:hover {
+      color: white;
+      font-weight: bolder;
+      text-decoration: underline;
+    }
+
+/* About Me */
+    /*this called in the id of about section*/
+     /* .about-me {
+      display: flex;
+      align-items: center;
+    } */
+    .abt {
+      display: flex;/*flex helps the img and written be layered side by side*/
+    }
+    .profile_image {
+      width: 550px;
+      height: fit-content;
+      vertical-align: middle;
+      margin: 5px;
+    }
+    /*the h1 tag is about section*/
+    #about-me h1 {
+      font-size: 65px;
+      margin-top: 90px;
+      color: black;
+    }
+    /*the p tag is about section*/
+    #about-me p {
+      font-size: 25px;
+      color: rgb(128, 128, 128);
+      margin-top: -1cm;
+    }
+
+    
+/* all h2s*/
+
+    h2 {
+      text-align: justify;
+      font-size: 50px;
+      text-align: center;
+      float: left;
+      color: rgb(60, 3, 3);
+      margin: 30px;
+      margin-left: 60px;
+      margin-top: 40px;
+      margin-bottom: 0px;
+    }
+
+
+/* Skills */
+
+.all_skills {
+  display: flex;/*each skill listed side by side*/
+  flex-direction: row;
+  flex-flow: wrap;
+}
+/* each skill box design/style*/
+.skill {
+  border: 1px solid gray;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+  box-shadow: 0 3px 10px gray;
+}
+/*for the img tag under skills*/
+.skill img {
+  height: 35px;
+  align-items: center;
+}
+/*for the h6 tag under skills*/
+.skills h6 {
+  align-items: center;
+  font-size: 20px;
+  margin-block-start: 8px;
+  margin-block-end: 5px;
+  font-weight: bold;
+} 
+/*for the p tag under skills*/
+.skills p {
+  align-items: center;
+  font-size: 15px;
+  color: gray;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+} 
+
+
+
+/* Projects */
+    /*this is for the arrangement of the div that hass all projects, so that its not directly under the project but a little futher , almost like you used 'tab' on computer..i hope you get it*/
+    .projects-container {
+      margin-top: 30px;
+      margin-left: 60px;
+    }
+    /*for the horizontal lines in the projects section*/
+    .projects-container hr {
+      border: 1px solid lightgray;
+      width: 75%;
+      margin-left: 5cm;
+    }
+    /*for each project styling*/
+    .project-card {
+      margin: 0 15px 15px 30px;
+      padding-bottom: 5px;
+    }
+    /*for the h3 tag in the div for for each projects*/
+    .project-card h3 {
+      font-size: 25px;
+      margin-left: 30px;
+    }
+    /*for the li tag in the div for for each projects*/
+    .project-card li {
+      font-size: 20px;
+      margin-left: 30px;
+    }
+
+
+
+/* Recommendations */
+
+     .all_recommendations {
+      display: flex;/* align all recommendations side by side in the recommendation div*/
+      align-items: center;
+      margin-left: 1in;
+      flex-direction: row;
+      flex-flow: wrap;
+      padding: 20px;
+    }
+    /*for each recomendation box/div*/
+    .recommendation {
+      font-style: italic;
+      text-align: left;
+      width: 21.875rem;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 11px;
+      box-shadow: 0 3px 10px var(--primary-shadow);
+      padding: 20px;
+      margin: 10px;
+      border:1px solid gray;
+      font-size: 18px;
+      height:150px
+    }
+    /*for each span tag in the recomendation box/div*/
+    .recommendation span {
+      color:rgb(60, 3, 3);
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+
+
+/* Recommendation Form */
+    .flex_center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .introduction {
+      text-align: justify;
+      font-size: 30px;
+      text-align: center;
+      float: left;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      animation-duration: 5s;
+      position: relative;
+    }
+    /*the fieldset tag styling/design in the recommendation form div */
+    fieldset {
+      display: flexbox;
+      align-content: center;
+      justify-content: center;  
+      padding: 25px; 
+      margin-left: 50px; 
+      margin-right: 50px;   
+      border: thin solid white;
+      width: 50%;
+    }
+    /*the input and textarea tag in the recommendation form div..the style of writing that will be typed in there */
+    input, textarea {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+      margin: 10px;  
+      width:100%;
+    }
+
+  /* Submit Buttons in recommendation*/
+    button {
+      background-color: #fff;
+      border: 1px solid rgb(60, 3, 3);
+      color: rgb(60, 3, 3);
+      display: block;
+      border-radius: 6px;
+      text-align: center;
+      margin: 50px;
+      padding: 10px;
+      width: 2in;
+      font-size: 20px;
+    }
+    /*when the mouse is on the button*/
+    button:hover {
+      background-color: rgb(60, 3, 3);
+      border: 1px solid rgb(60, 3, 3);
+      color: #fff;
+      display: block;
+      border-radius: 6px;
+      text-align: center;
+      cursor: pointer;
+    }    
+
+
+/* Form Pop-up */
+    /*for the whole popup box*/
+    .popup {
+      width:400px;
+      background-color: #e8bcf0;
+      border-radius: 3mm;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      position: fixed;
+      /* padding: 30px; */
+      visibility: hidden;
+    }
+    /* for the img tag in the popup div*/
+    .popup img {
+      padding-top: 20px;
+    }
+    /* for the button tag in the popup div*/
+    .popup button {
+      background-color: #fff;
+      border: 1px solid rgb(60, 3, 3);
+      color: rgb(60, 3, 3);
+      display: block;
+      border-radius: 6px;
+      text-align: center;
+      margin: 50px;
+      padding: 10px;
+      width: 2in;
+      font-size: 20px;
+      margin-left: 25%;
+    }
+    /* for the button tag in the popup div when the mouse is on the 'ok' button */
+    .popup button:hover {
+      background-color: #fff;
+      border: 2px solid rgb(60, 3, 3);
+      color: rgb(60, 3, 3);
+      display: block;
+      font-weight: bolder;
+      text-align: center;
+      cursor: pointer;
+      margin-left: 25%;
+    }
+
+
+/* Scroll to Top Button */
+
+ .iconbutton{
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: rgb(60, 3, 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  cursor: pointer;
+}
